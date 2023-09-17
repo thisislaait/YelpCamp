@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YelpCamp For HerTechTrail</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YelpCamp</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <section>
-        <div class="hero flex h-screen">
-            <div class="hero-details w-1/2 p-6 ml-16 mr-16">
-                <img src="/Assets/Logo.svg" alt="logo">
-                <h2 class="text-4xl font-semibold pt-32">Explore the best</h2>
-                <h2 class="text-4xl font-semibold">camps on Earth</h2>
-                <p class="mt-4 text-lg">YelpCamp is a curated list of the best camping spots on Earth, Unfiltered and unbiased reviews</p>
-                <ul class="list-none mt-6">
-                  <li class="mb-2 mt-2"><i class="material-icons text-green-500" style="font-size: 1rem;">check_circle</i>Add your own camp suggestions.</li>
-                  <li class="mb-2 mt-2"><i class="material-icons text-green-500" style="font-size: 1rem;">check_circle</i>Leave reviews and experiences.</li>
-                  <li class="mb-2 mt-2"><i class="material-icons text-green-500" style="font-size: 1rem;">check_circle</i>See locations for all camps.</li>
-            </div>
-            <div class="hero-bg w-1/2 bg-cover bg-center" style="background-image: url('/Assets/Hero Image.jpg');">
+<body class="m-0 p-0 font-sans">
+  <section class="hero h-screen overflow-hidden">
+    <div class="hero-main">
+      <div class="hero-container h-screen flex" style="background-color: rgb(255, 254, 246);">
+        <div class="hero-details w-5/12 pt-5 mx-24">
+          <img src="/Assets/Logo.svg" alt="" class="logo w-24 pt-3">
+          <h1 class="text-5xl font-bold pt-20 pb-5">Explore the best <br/> camps on Earth.</h1>
+          <p class="text-sm leading-5 pr-14 pb-2.5 text-gray-600">YelpCamp is a curated list of the best camping spots on Earth, Unfiltered and unbiased reviews.</p>
+          <ul class="list-none">
+                <li class="text-sm flex items-center text-gray-900 pb-1 pt-1.5">
+                  <i class="material-icons text-xs mr-2 text-green-500" style="font-size: 1rem; color: rgb(9, 118, 111);">check_circle</i><span>Add your own camp suggestions.</span>
+                </li>
+                <li class="text-sm flex items-center text-gray-900 pb-1">
+                  <i class="material-icons text-xs mr-2 text-green-500" style="font-size: 1rem; color: rgb(9, 118, 111);">check_circle</i><span>Leave reviews and experiences.</span>
+                </li>
+                <li class="text-sm flex items-center text-gray-900 pb-1">
+                  <i class="material-icons text-xs mr-2" style="font-size: 1rem; color: rgb(9, 118, 111);">check_circle</i><span>See locations for all camps.</span>
+                </li>
+          </ul>
+          <button class="my-5 p-2.5 bg-black text-xs text-white rounded font-medium">View Campgrounds</button>
+          <p>Partnered with:</p>
+            <div class="partner-logos flex  space-x-3 py-2.5">
+              <img src="/Assets/Airbnb.svg" alt="" class="w-24">
+              <img src="/Assets/Booking.svg" alt="" class="w-24">
+              <img src="/Assets/Plum Guide.svg" alt="" class="w-24">
             </div>
         </div>
-    </section>
-    
+        <div class="hero-bg w-8/12 bg-cover bg-center" style="background-image: url('/Assets/Hero Image.jpg');">
+        </div>
+      </div>
+    </div>
+</section>
 </body>
 </html>
