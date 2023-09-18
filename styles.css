@@ -1,0 +1,51 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ width: 100vw;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+
+}
+
+ul {
+ list-style: none;
+}
+
+.logo {
+ width: 90px;
+}
+
+.top {
+ flex: 1;
+}
+
+.nav {
+ display: flex;
+ list-style: none;
+ justify-content: space-between;
+ gap: 5rem;
+ margin: 20px 80px;
+
+}
+
+.home, .user-account {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ gap: 1rem;
+}
+
+button {
+ padding: 10px;
+ border-radius: 5px;
+ color: white;
+ background-color: black;
+}
+
+.footer {
+ margin: 0 0 40px 80px;
+}
