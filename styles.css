@@ -8,11 +8,18 @@ body {
  min-height: 100vh;
  display: flex;
  flex-direction: column;
+}
 
+a {
+ color: rgb(20, 20, 85);
 }
 
 ul {
  list-style: none;
+}
+
+h1 {
+ padding: 5px 0;
 }
 
 .logo {
@@ -46,10 +53,17 @@ button {
  background-color: black;
 }
 
+.form {
+ padding: 10px;
+ border: solid 1px;
+ border-radius: 5px;
+ margin: 10px 0;
+}
+
 .banner {
  background-color: rgb(247, 242, 231);
  margin: 10px 80px;
- padding: 20px 80px 20px 20px;
+ padding: 40px 850px 40px 20px;
 }
 
 .footer {
