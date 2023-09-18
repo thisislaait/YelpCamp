@@ -23,7 +23,7 @@ ul {
  flex: 1;
 }
 
-.nav {
+.nav-box {
  display: flex;
  list-style: none;
  justify-content: space-between;
@@ -44,6 +44,12 @@ button {
  border-radius: 5px;
  color: white;
  background-color: black;
+}
+
+.banner {
+ background-color: rgb(247, 242, 231);
+ margin: 10px 80px;
+ padding: 20px 80px 20px 20px;
 }
 
 .footer {
