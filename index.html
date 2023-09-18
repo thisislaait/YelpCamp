@@ -3,13 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YelpCamp HerTechTrail</title>
+  <title>YelpCamp</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<body class="m-0 p-0 font-sans overflow-x-hidden" style="background-color: rgb(255, 254, 246);">
+  <section class="hero h-screen lg:hidden">
+    <div class="hero-main">
+      <div class="hero-container w-screen">
+          <img src="/Assets/Logo.svg" alt="" class="logo w-24 py-5 ml-12">
+          <img src="/Assets/Hero Image (Tablet and Mobile).jpg" alt="" class="w-full">
+        </div>
+        <div class="hero-details pt-5 ml-32 mr-14"></div>
+          <h1 class="text-3xl md:text-5xl font-bold pt-5 pb-5 ml-12 mr-44">Explore the best camps on Earth.</h1>
+          <p class="text-sm md:text-base leading-5 pr-44 md:pr-64 pb-2.5 text-gray-600 ml-12 w-screen">YelpCamp is a curated list of the best camping spots on Earth, Unfiltered and unbiased reviews.</p>
+          <ul class="list-none ml-12 text-sm pb-1 text-gray-900">
+                <li class="flex items-center pt-1.5">
+                  <i class="material-icons text-xs mr-2 text-green-500" style="font-size: 1.1rem; color: rgb(9, 118, 111);">check_circle</i><span>Add your own camp suggestions.</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="material-icons text-xs mr-2 text-green-500" style="font-size: 1.1rem; color: rgb(9, 118, 111);">check_circle</i><span>Leave reviews and experiences.</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="material-icons text-xs mr-2" style="font-size: 1.1rem; color: rgb(9, 118, 111);">check_circle</i><span>See locations for all camps.</span>
+                </li>
+          </ul>
+          <button class="my-5 p-2.5 bg-black text-xs text-white rounded font-medium ml-12">View Campgrounds</button>
+          <p class="ml-12">Partnered with:</p>
+            <div class="partner-logos flex  space-x-3 pt-2.5 pb-14 ml-12">
+              <img src="/Assets/Airbnb.svg" alt="" class="w-24">
+              <img src="/Assets/Booking.svg" alt="" class="w-24">
+              <img src="/Assets/Plum Guide.svg" alt="" class="w-24">
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+</body>
 <body class="m-0 p-0 font-sans">
-  <section class="hero h-screen overflow-hidden">
+  <section class="hero h-screen overflow-hidden hidden lg:block">
     <div class="hero-main">
       <div class="hero-container h-screen flex" style="background-color: rgb(255, 254, 246);">
         <div class="hero-details w-7/12 pt-5 ml-32 mr-24">
@@ -36,7 +69,7 @@
             </div>
         </div>
         <div class="hero-bg w-9/12 bg-cover bg-center">
-          <img src="/Assets/Hero Image.jpg" alt="" class="bg-cover bg-center pl-24">
+          <img src="/Assets/Hero Image.jpg" alt="" class="bg-cover bg-center pl-24 py-0 my-0">
         </div>
       </div>
     </div>
