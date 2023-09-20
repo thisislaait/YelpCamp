@@ -7,87 +7,41 @@
  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
  <link rel="stylesheet" href="styles.css">
 </head>
- <body class="w-screen min-h-screen flex flex-col m-0 p-0" style="font-family: Arial, Helvetica, sans-serif;">
+<body class="w-screen min-h-screen flex flex-col m-0 p-0 overflow-x-hidden" style="font-family: Arial, Helvetica, sans-serif;">
   <main class="top flex-1">
    <nav class="nav-box flex list-none justify-between gap-20 my-5 mx-20">
-    <div class="home flex items-center justify-evenly gap-4">
-     <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
-     <ul>
-      <li>Home</li>
-     </ul>
-    </div>
-    <div class="user-account flex items-center justify-evenly gap-4">
-     <ul class="list-none">
-      <li>Login</li>
-     </ul>
-     <button class="cta py-2.5 px-8 rounded text-white bg-black">Create an account</button>
-    </div>
+      <div class="home flex items-center justify-evenly gap-4">
+        <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
+        <ul>
+          <li>Home</li>
+        </ul>
+      </div>
+      <div class="user-account flex items-center justify-evenly gap-4">
+        <ul class="list-none">
+          <li>Login</li>
+        </ul>
+        <button class="cta py-2.5 px-8 rounded text-white bg-black">Create an account</button>
+      </div>
    </nav>
    <section>
-    <div class="banner my-2.5 mx-20 py-10 pl-5 pr-96" style="background-color: rgb(247, 242, 231); ">
-     <h1 class="text-3xl font-bold py-1">Welcome To YelpCamp!</h1>
-     <p class="text-base pr=96">View our hand-picked campgrounds from all over the world, or add your own.</p>
-     <form action="/search" method="GET" class="search-box">
-      <img src="/Assets/Search Icon.svg" alt="search-box">
-      <input type="text" name="query" placeholder="search for camps" class="form py-2.5 px-8 my-2.5 rounded" style="border: solid 1px;">
-      <button type="submit" class="py-2.5 px-8 rounded text-white bg-black">Search</button>
-     </form>
-     <p><a href="#" class="text-blue-900 underline">or add your own campground</a></p>
-    </div>
+      <div class="banner my-2.5 mx-20 py-10 pl-5 pr-96" style="background-color: rgb(247, 242, 231);">
+        <h1 class="text-3xl font-bold py-1">Welcome To YelpCamp!</h1>
+        <p class="text-base pr-96">View our hand-picked campgrounds from all over the world, or add your own.</p>
+        <form action="/search" method="GET" class="search-box">
+          <img src="/Assets/Search Icon.svg" alt="search-box">
+          <input type="text" name="query" placeholder="search for camps" class="form py-2.5 px-8 my-2.5 rounded" style="border: solid 1px;">
+          <button type="submit" class="py-2.5 px-8 rounded text-white bg-black">Search</button>
+        </form>
+        <p><a href="#" class="text-blue-900 underline">or add your own campground</a></p>
+      </div>
    </section>
-   <section class="cards">
-    <div class="images" data-name="cards">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
-    <div class="images">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
-    <div class="images">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
-    <div class="images">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
-    <div class="images">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
-    <div class="images">
-      <img src="/Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="img1">
-      <div class="card-body">
-        <h1 class="card_title">Mount Ulap</h1>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="card-btn">View Campground</button>
-      </div>
-    </div>
+   <section class="row card-content">
    </section>
   </main>
   <footer class="footer">
     <img src="/Assets/Logo.svg" alt="logo" class="logo mb-10 ml-20">
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
