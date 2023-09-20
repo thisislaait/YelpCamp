@@ -43,7 +43,7 @@ const cardsArr = [
    id: 6,
    title: "Buloy Springs",
    des: "This is one of the best beach camping sites, beautiful and pristine.",
-   img: "/Assets/Camp Images/Compressed Images/Latik Riverside.jpg", 
+   img: "/Assets/Camp Images/Compressed Images/Buloy Springs.jpg", 
    route: "buloy-springs.html",
  }
 
