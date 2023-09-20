@@ -5,7 +5,7 @@ const cardsArr = [
    des: "One of the most famous hikes in Benguet is Mt Ulap.",
    img: "/Assets/Camp Images/Compressed Images/Mount Ulap.jpg", 
    route: "Mount-Ulap.html",
- },
+ }
 
  {
    id: 2,
@@ -13,7 +13,7 @@ const cardsArr = [
    des: "A paradise of islands that can rival the white sand beauty of Boracay.",
    img: "/Assets/Camp Images/Compressed Images/Calaguas Island.jpg", 
    route: "calaguas-island.html",
- },
+ }
 
  {
    id: 3,
@@ -21,7 +21,7 @@ const cardsArr = [
    des: "This is one of the best beach camping sites, beautiful and pristine.",
    img: "/Assets/Camp Images/Compressed Images/Onay Beach.jpg", 
    route: "onay-beach.html",
- },
+ }
 
  {
    id: 4,
@@ -29,7 +29,7 @@ const cardsArr = [
    des: "The Seven Sisters is the 39th tallest waterfall in Norway",
    img: "/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg", 
    route: "seven-sisters-waterfall.html",
- },
+ }
 
  {
    id: 5,
@@ -37,7 +37,7 @@ const cardsArr = [
    des: "Philippines is one of the most dazzling countries in all of Asia",
    img: "/Assets/Camp Images/Compressed Images/Latik Riverside.jpg", 
    route: "latik-riverside.html",
- },
+ }
 
  {
    id: 6,
