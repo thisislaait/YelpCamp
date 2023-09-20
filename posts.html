@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Campgrounds</title>
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="w-screen min-h-screen flex flex-col m-0 p-0 overflow-x-hidden lg:block lg:font-serif" style="font-family: Arial, Helvetica, sans-serif;">
+  <!-- Mobile & Tablet -->
+  <main class="lg:hidden">
+    <nav class="nav-box flex list-none justify-between gap-4 md:ml-20 md:mr-28 md:gap-20 my-5 ml-12 mr-16">
+      <div class="home flex items-center justify-evenly gap-2">
+        <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
+      </div>
+      <div class="user-account flex items-center justify-evenly gap-2">
+        <img src="/Assets/Hamburger Menu.svg" alt="" srcset="">
+      </div>
+    </nav>
+
+    <div class="main">
+     <section>
+      <div class="map">
+        <img src="/Assets/Map.png" alt="" srcset="">
+      </div>
+     </section>
+
+     <section>
+       
+     </section>
+
+     <section>
+       
+     </section>
+
+    </div>
+  </main>
+
+  <!-- Laptop -->
+  <main class="hidden lg:block flex flex-1">
+      <nav class="nav-box flex list-none justify-between gap-20 my-5 mx-20">
+         <div class="home flex items-center justify-evenly gap-4">
+            <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
+            <ul>
+               <li class="mt-1">Home</li>
+            </ul>
+         </div>
+         <div class="user-account flex items-center justify-evenly gap-4">
+             <ul class="list-none">
+               <li>Login</li>
+            </ul>
+            <button class="cta py-2.5 px-8 rounded text-white bg-black">Create an account</button>
+         </div>
+      </nav>
+      <div class="main">
+            <section class="map">
+               <img src="/Assets/Map.png" alt="" srcset="">
+            </section>
+            <div class="camp-details">
+               <section class="details-card">
+                  <img src="/Assets/Camp Images/Compressed Images/High Quality Images/Mount Ulap.png" alt="" srcset="" class="thumbmail">
+                  <div class="pricing">
+                     <h1>Mount Ulap</h1>
+                     <p>$104.99/night</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit odio recusandae odit, quo exercitationem expedita facilis sequi explicabo eius.</p>
+               </section>
+ 
+               <section class="reviews">
+                  <div class="testimonials">
+                     <div class="tes">
+                        <div class="tes-label">
+                              <h3 id="duration">Adam Jones</h3>
+                              <p>13h ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at quae beatae, necessitatibus animi debitis asperiores voluptatibus eum. Pariatur, facilis.</p>
+                     </div>
+                     <div class="tes">
+                        <div class="tes-label">
+                           <h3 id="duration">Issac Dylan</h3>
+                           <p>1 day ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, optio doloremque! Autem exercitationem architecto atque rem expedita vitae asperiores libero.</p>
+                     </div>
+
+                     <div class="tes">
+                        <div class="tes-label">
+                           <h3 id="duration">Hudson Luca</h3>
+                           <p>3 days ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatibus commodi ex sint animi eaque iste sapiente fugiat doloribus facilis!</p>
+                     </div>
+                     <div class="review-btn">
+                        <img src="/Assets/Chat Bubble.svg" alt="" srcset="">
+                        <button><a href="#">Leave a Review</a></button>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+  </main>
+
+  <footer class="footer">
+    <img src="/Assets/Logo.svg" alt="logo" class="logo mb-10 ml-12 md:ml-20">
+  </footer>
+</body>
+</html>

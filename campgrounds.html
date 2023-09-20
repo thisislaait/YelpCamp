@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Campgrounds</title>
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="w-screen min-h-screen flex flex-col m-0 p-0 overflow-x-hidden lg:block lg:font-serif" style="font-family: Arial, Helvetica, sans-serif;">
+  <!-- Mobile & Tablet -->
+  <main class="lg:hidden">
+    <nav class="nav-box flex list-none justify-between gap-4 md:ml-20 md:mr-28 md:gap-20 my-5 ml-12 mr-16">
+      <div class="home flex items-center justify-evenly gap-2">
+        <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
+      </div>
+      <div class="user-account flex items-center justify-evenly gap-2">
+        <img src="/Assets/Hamburger Menu.svg" alt="" srcset="">
+      </div>
+    </nav>
+    <section>
+      <div class="banner my-2.5 ml-12 mr-16 py-5 px-4 md:ml-20 md:mr-28" style="background-color: rgb(247, 242, 231);">
+        <h1 class="text-3xl font-bold py-1 pl-5 pr-20">Welcome To YelpCamp!</h1>
+        <p class="text-base pr-32 pl-5 md:pr-80">View our hand-picked campgrounds from all over the world, or add your own.</p>
+        <form action="/search" method="GET" class="search-box relative sm:inline-block md:flex">
+          <img src="/Assets/Search Icon.svg" alt="search-box" class="absolute pl-10 pr-44 mt-5 md:mt-8 -translate-y-2/4">
+          <input type="text" name="query" placeholder="Search for camps" class="form py-1.5 px-12 md:py-2.5 md:px-8 md:pl-12 my-2.5 ml-4 rounded border border-gray-400 md:border-solid sm:block">
+          <button type="submit" class="py-1.5 px-28 md:py-4 md:px-12  ml-4 rounded md:mt-2.5 md:mb-3 text-white bg-black">Search</button>
+        </form>
+        <p class="py-4"><a href="#" class="text-blue-900 underline mx-4">Or add your own campground</a></p>
+      </div>
+    </section>
+    <section class="row card-content mx-12 md:mx-20 flex items-center flex-wrap md:flex gap-2.5 mb-10">
+      <!-- Cards for mobile and tablet -->
+    </section>
+  </main>
+
+  <!-- Laptop -->
+  <main class="hidden lg:block flex flex-1">
+    <nav class="nav-box flex list-none justify-between gap-20 my-5 mx-20">
+      <div class="home flex items-center justify-evenly gap-4">
+        <img src="/Assets/Logo.svg" alt="logo" class="logo w-30">
+        <ul>
+          <li class="mt-1">Home</li>
+        </ul>
+      </div>
+      <div class="user-account flex items-center justify-evenly gap-4">
+        <ul class="list-none">
+          <li>Login</li>
+        </ul>
+        <button class="cta py-2.5 px-8 rounded text-white bg-black">Create an account</button>
+      </div>
+    </nav>
+    <section>
+      <div class="banner my-2.5 mx-20 py-10 pl-5 pr-96" style="background-color: rgb(247, 242, 231);">
+        <h1 class="text-3xl font-bold py-1">Welcome To YelpCamp!</h1>
+        <p class="text-base pr-96">View our hand-picked campgrounds from all over the world, or add your own.</p>
+        <form action="/search" method="GET" class="search-box relative">
+          <img src="/Assets/Search Icon.svg" alt="search-box" class="absolute px-2.5 mt-6 -translate-y-2/4">
+          <input type="text" name="query" placeholder="Search for camps" class="form py-2.5 px-8 my-2.5 rounded border border-gray-400 border-solid">
+          <button type="submit" class="py-2.5 px-8 rounded text-white bg-black">Search</button>
+        </form>
+        <p><a href="#" class="text-blue-900 underline">Or add your own campground</a></p>
+      </div>
+    </section>
+    <section class="row card-content mx-20 flex flex-wrap mb-10">
+      <!-- Cards for laptop -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="/Assets/Logo.svg" alt="logo" class="logo mb-10 ml-12 md:ml-20">
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
