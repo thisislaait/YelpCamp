@@ -1,0 +1,6 @@
+.card-content {
+ margin: 0 80px;
+ display: flex;
+ flex-wrap: wrap;
+ margin-bottom: 40px;
+}
