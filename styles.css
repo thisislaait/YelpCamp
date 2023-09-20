@@ -1,59 +1,67 @@
-.search-box {
- position: relative;
-}
-
-.search-box img {
- top: 50%;
- position: absolute;
- transform: translateY(-50%);
- padding: 0 10px;
-}
-
-.row {
- margin: 0 80px;
+.main {
  display: flex;
- flex-wrap: wrap;
- gap: 10px;
- margin-bottom: 40px;
+ justify-content: space-evenly;
+ width: 100vw;
+ gap: 10rem;
+ margin: 35px 80px;
 }
 
-.cards {
- flex-basis: 380px;
+.map {
+ height: 50%;
+ border: solid 1px black;
+ padding: 40px;
 }
 
-.images {
- margin: 20px 0;
- border: solid 0.5px rgb(109, 109, 109);
- border-radius: 10px;
- padding: 15px;
+.map img{
+ width: 490px;
 }
 
-.images img {
- width: 100%;
-}
-
-.card-body {
+.camp-details {
  display: flex;
  flex-direction: column;
- gap: 10px;
+ justify-content: space-between;
+ margin-right: 165px;
+ gap: 5rem;
 }
 
-.card-btn {
- border: solid 0.5px rgb(109, 109, 109);
- border-radius: 5px;
- justify-content: center;
- padding: 5px;
- font-size: 0.9rem;
- font-weight: 900;
+.details-card {
+ width: 100%;
+ border: solid 1px black;
+ padding: 40px;
 }
 
-.card_title {
- margin-top: 10px;
- font-size: 1.2rem;
- font-weight: 900;
+.reviews {
+ width: 100%;
+ border: solid 1px black;
+ padding: 40px;
 }
 
-.card-text {
- font-size: 1rem;
- color: rgb(99, 99, 99);
+.thumbmail {
+ width: 1200px;
+}
+
+.pricing {
+ margin: 20px 0;
+ display: flex;
+ justify-content: space-between;
+}
+
+.tes-label {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+}
+
+.tes {
+ border-bottom: solid 1px black;
+ margin: 20px;
+}
+
+#duration {
+ margin-top: 15px;
+ font-weight: 600;
+}
+
+p {
+ color: rgb(146, 138, 138);
 }

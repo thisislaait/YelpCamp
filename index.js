@@ -2,47 +2,47 @@ const cardsArr = [
  {
    id: 1,
    title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   des: "One of the most famous hikes in Benguet is Mt Ulap.",
    img: "/Assets/Camp Images/Compressed Images/Mount Ulap.jpg", 
-   route: "#",
+   route: "https://amazon.com",
  },
 
  {
    id: 2,
-   title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   title: "Calaguas Island",
+   des: "A paradise of islands that can rival the white sand beauty of Boracay.",
    img: "/Assets/Camp Images/Compressed Images/Calaguas Island.jpg", 
    route: "#",
  },
 
  {
    id: 3,
-   title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   title: "Onay Beach",
+   des: "This is one of the best beach camping sites, beautiful and pristine.",
    img: "/Assets/Camp Images/Compressed Images/Onay Beach.jpg", 
    route: "#",
  },
 
  {
    id: 4,
-   title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   title: "Seven Sisters Waterfall",
+   des: "The Seven Sisters is the 39th tallest waterfall in Norway",
    img: "/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg", 
    route: "#",
  },
 
  {
    id: 5,
-   title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   title: "Latik Riverside",
+   des: "Philippines is one of the most dazzling countries in all of Asia",
    img: "/Assets/Camp Images/Compressed Images/Latik Riverside.jpg", 
    route: "#",
  },
 
  {
    id: 6,
-   title: "Mount Ulap",
-   des: "One of the most famous hikes in Benguet is Mt Ulap",
+   title: "Buloy Springs",
+   des: "This is one of the best beach camping sites, beautiful and pristine.",
    img: "/Buloy Springs.jpg", 
    route: "#",
  }
@@ -56,13 +56,13 @@ window.addEventListener("DOMContentLoaded", function () {
   const showInHtml = cardsArr.map((project, index) => {
  
    return `
-         <div class="cards">
-           <div class="images" data-name="cards">
-             <img src="${project.img}" alt="img1">
-             <div class="card-body">
-               <h1 class="card_title">${project.title}</h1>
-               <p class="card-text">${project.des}</p>
-               <button class="card-btn"><a href=${project.route}></a>View Campground</button>
+         <div class="cards" style="flex-basis: 380px;">
+           <div class="images my-5 p-3.5 rounded-xl" style="border: solid 0.5px rgb(109, 109, 109);">
+             <img src="${project.img}" alt="img1" class="w-full">
+             <div class="card-body flex flex-col gap-2.5">
+               <h1 class="card_title mt-2.5 text-base font-black">${project.title}</h1>
+               <p class="card-text text-base text-gray-600">${project.des}</p>
+               <button class="card-btn font-black text-sm p-1 py-4 justify-center rounded" style="border: solid 0.5px rgb(109, 109, 109);"><a href=${project.route}>View Campground</a></button>
              </div>
            </div>
          </div>
