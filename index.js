@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const showInHtml = cardsArr.map((project, index) => {
  
    return `
-         <div class="cards" style="flex-basis: 380px;">
+         <div class="cards" style="flex-basis: 370px;">
            <div class="images my-5 p-3.5 rounded-xl" style="border: solid 0.5px rgb(189, 185, 185);">
              <img src="${project.img}" alt="img1" class="w-full">
              <div class="card-body flex flex-col gap-2.5">
