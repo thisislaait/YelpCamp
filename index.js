@@ -52,10 +52,13 @@ const cardsArr = [
 document.addEventListener("click", function () {
   const searchButton = document.getElementById("searchButton");
   const searchInput = document.getElementById("searchQuery");
-  
-}
 
-);
+  searchButton.addEventListener("click",function () {
+    const searchTerm = searchInput.value;
+
+  })
+
+});
 
 
 const cardContent = document.querySelector(".card-content");
