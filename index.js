@@ -49,6 +49,14 @@ const cardsArr = [
 
 ]
 
+document.addEventListener("click", function () {
+  const searchButton = document.getElementById("searchButton");
+  const searchInput = document.getElementById("searchQuery");
+  
+}
+
+);
+
 
 const cardContent = document.querySelector(".card-content");
 
