@@ -4,6 +4,7 @@ const cardsArr = [
    title: "Mount Ulap",
    des: "One of the most famous hikes in Benguet is Mt Ulap.",
    img: "/Assets/Camp Images/Compressed Images/Mount Ulap.jpg", 
+   search: "mount ulap",
    route: "Mount-Ulap.html",
  },
 
@@ -12,6 +13,7 @@ const cardsArr = [
    title: "Calaguas Island",
    des: "A paradise of islands that can rival the white sand beauty of Boracay.",
    img: "/Assets/Camp Images/Compressed Images/Calaguas Island.jpg", 
+   search: "calagua island",
    route: "calaguas-island.html",
  },
 
@@ -49,16 +51,16 @@ const cardsArr = [
 
 ]
 
-document.addEventListener("click", function () {
-  const searchButton = document.getElementById("searchButton");
-  const searchInput = document.getElementById("searchQuery");
+let searchForm = document.querySelector('searchForm');
+let images = document.querySelectorAll('.card-content .cards .images');
 
-  searchButton.addEventListener("click",function () {
-    const searchTerm = searchInput.value;
-
-  })
-
-});
+searchForm.onInput = () =>{
+  let value = searchForm.value;
+  images.forEach(filter =>{
+    let title = filter.getAttribute('')
+  }
+  )
+}
 
 
 const cardContent = document.querySelector(".card-content");
@@ -67,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const showInHtml = cardsArr.map((project, index) => {
  
    return `
-         <div class="cards" style="flex-basis: 370px;">
+         <div class="cards" data-title=${project.search} style="flex-basis: 370px;">
            <div class="images my-5 p-3.5 rounded-xl" style="border: solid 0.5px rgb(189, 185, 185);">
              <img src="${project.img}" alt="img1" class="w-full">
              <div class="card-body flex flex-col gap-2.5">
